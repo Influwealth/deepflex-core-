@@ -15,7 +15,9 @@ LLM_API_KEY = os.getenv("LLM_API_KEY", "change_me")
 REFLEX_MAX_RISK = float(os.getenv("REFLEX_MAX_RISK", "0.35"))  # lower = stricter
 
 # Capsule governance
-ALLOWLIST_TOOLS = os.getenv("ALLOWLIST_TOOLS", "health,echo,capsule_registry").split(",")
+ALLOWLIST_TOOLS = os.getenv(
+    "ALLOWLIST_TOOLS",
+    "health,echo,deepflex_decide").split(",")
 
 # MCP security
 MCP_BEARER_TOKEN = os.getenv("MCP_BEARER_TOKEN", "change_me")
