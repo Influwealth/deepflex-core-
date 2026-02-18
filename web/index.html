@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DeepFlex Desktop (Web Runtime)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>DEEPFLEX DESKTOP · WEB RUNTIME</h1>
+    <p>WealthBridge OS · Sovereign Mesh Node</p>
+  </header>
+
+  <main class="main">
+    <section class="status">
+      <h2>System Online</h2>
+      <p>Browser-native runtime active (WebGPU · WebLLM · WebMCP · OpenWhispr)</p>
+
+      <div class="capsule-grid">
+        <div class="capsule-card">
+          <h3>WebGPU</h3>
+          <p id="webgpu-status">Detecting GPU capabilities...</p>
+          <button id="webgpu-run-btn" type="button">Run WebGPU Test</button>
+          <pre id="webgpu-output" class="output"></pre>
+        </div>
+
+        <div class="capsule-card">
+          <h3>WebLLM</h3>
+          <p id="webllm-status">Model loader not wired yet.</p>
+          <label for="webllm-prompt">Prompt</label>
+          <textarea id="webllm-prompt" rows="3" placeholder="Ask DeepFlex LLM..."></textarea>
+          <button id="webllm-run-btn" type="button">Run LLM Prompt</button>
+          <pre id="webllm-output" class="output"></pre>
+        </div>
+
+        <div class="capsule-card">
+          <h3>WebMCP</h3>
+          <p id="webmcp-status">Capsule orchestrator placeholder.</p>
+          <label for="webmcp-tool">Tool</label>
+          <input id="webmcp-tool" type="text" value="echo" />
+          <label for="webmcp-args">Args JSON</label>
+          <textarea id="webmcp-args" rows="3">{ "text": "hello mcp" }</textarea>
+          <button id="webmcp-run-btn" type="button">Run MCP Tool</button>
+          <pre id="webmcp-output" class="output"></pre>
+        </div>
+
+        <div class="capsule-card">
+          <h3>OpenWhispr Capsule</h3>
+          <p id="openwhispr-status">Not connected</p>
+          <button id="openwhispr-connect-btn" type="button">Connect</button>
+          <label for="openwhispr-message">Message</label>
+          <input id="openwhispr-message" type="text" value="hello openwhispr" />
+          <button id="openwhispr-send-btn" type="button">Send</button>
+          <pre id="openwhispr-output" class="output"></pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

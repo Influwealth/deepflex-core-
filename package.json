@@ -1,0 +1,14 @@
+{
+    "packageManager":  "pnpm@10.29.3",
+    "scripts":  {
+                    "start":  "electron ."
+                },
+    "dependencies":  {
+                         "@jason.today/webmcp":  "^0.1.13",
+                         "@mlc-ai/web-llm":  "^0.2.80"
+                     },
+    "devDependencies":  {
+                            "electron":  "28.2.0"
+                        },
+    "main":  "main.js"
+}
