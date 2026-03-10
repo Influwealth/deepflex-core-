@@ -8,7 +8,7 @@
                          "@mlc-ai/web-llm":  "^0.2.80"
                      },
     "devDependencies":  {
-                            "electron":  "28.2.0"
+                            "electron":  "35.7.5"
                         },
     "main":  "main.js"
 }
